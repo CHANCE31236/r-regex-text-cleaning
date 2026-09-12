@@ -54,8 +54,9 @@ string_pos4 <- regexpr("[0-9]{4}$", text2)
 string_pos4                  # [1] 25   (the "0915")
 
 # k) Extract the first two digits starting at string_pos4
-year_prefix <- substr(text2, string_pos4, string_pos4 + 1)
-year_prefix                  # [1] "09"
+#    ("09" is the hour of the time "0915", not a year)
+first_two_digits <- substr(text2, string_pos4, string_pos4 + 1)
+first_two_digits             # [1] "09"
 
 # -----------------------------------------------------------------------------
 # Exercise 1.2 - Cleaning a vector of messy phone numbers
