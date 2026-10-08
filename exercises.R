@@ -36,7 +36,7 @@ library(stringr)
 # j) Find in text2 the following pattern: four digits at the END of the string.
 #    Store the starting position in string_pos4.
 # k) According to string_pos4, extract the FIRST TWO digits that start at that
-#    position. Store the result in year_prefix.
+#    position. Store the result in first_two_digits (the hour prefix).
 
 # -----------------------------------------------------------------------------
 # Exercise 1.2 - Cleaning a vector of messy phone numbers
@@ -51,7 +51,8 @@ library(stringr)
 #      - a leading "0033" should become "0"  (e.g. "0033612345678" -> "0612345678")
 #      - a leading "33" on an 11-digit number should become "0"
 #    Use sub() on digits_only. Store the result in phone_national.
-# d) Validate the result: a valid French mobile number matches "^0[0-9]{9}$".
+# d) Check the French national number format with "^0[0-9]{9}$".
+#    This checks formatting; it does not prove a number is assigned or mobile.
 #    Use str_detect() to create a logical vector valid_flag.
 # e) Build a data frame (tibble) with the original value, the national format
 #    and the validity flag. How many entries are valid? How many are invalid?
