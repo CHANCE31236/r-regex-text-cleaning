@@ -1,8 +1,8 @@
 # =============================================================================
 # r-regex-text-cleaning - SOLUTIONS
 # -----------------------------------------------------------------------------
-# Every step prints the expected result in a comment. Run the whole file:
-#   source("solutions.R")
+# Comments show the expected results. Display each step with:
+#   source("solutions.R", echo = TRUE)
 # =============================================================================
 
 library(stringr)

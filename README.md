@@ -40,6 +40,18 @@ R 4.0 or newer. Only `stringr` is needed.
 - Missing values survive the cleaning steps as `NA` rather than becoming empty
   strings, so the valid / invalid / missing counts stay separable.
 
+## Validation
+
+Run from the repository root:
+
+```bash
+Rscript --vanilla tests/smoke.R
+```
+
+GitHub Actions runs the same checks on every pull request. The exercise file
+retains its practice tasks; automated checks run the completed solutions.
+To display each solution step interactively, use `source("solutions.R", echo = TRUE)`.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
